@@ -7,8 +7,18 @@
         xmlns:viewModel="clr-namespace:Demo.CleanRaisePropertyChanged.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        DataContext="{Binding Main, Source={StaticResource Locator}}">
+        DataContext="{Binding Main, Source={StaticResource Locator}}"
+        Background="#ecf0f1">
     <Grid>
-        <TextBlock Text="{Binding Index}"/>
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Awesome counter!"
+                       Foreground="#9b59b6"
+                       FontSize="32"/>
+            <TextBlock Text="{Binding Index}" 
+                       Foreground="#34495e"
+                       HorizontalAlignment="Center"
+                       FontSize="64" FontWeight="Bold"/>
+        </StackPanel>
+        
     </Grid>
 </Window>
